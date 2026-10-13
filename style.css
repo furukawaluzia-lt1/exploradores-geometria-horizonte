@@ -42,3 +42,12 @@ dialog{background:#fffdf6;border-top:6px solid #086878}dialog::backdrop{backgrou
 footer{background:#dcebe7;border-top:2px solid #88b0b2;color:#395963}#accessCount{background:#fff8e8;border-color:#98b8b4;color:#174654}
 button:focus-visible,a:focus-visible{outline-color:#bd7720}header button:focus-visible,header a:focus-visible{outline-color:#ffe3a1}
 @media(max-width:800px){header{border-bottom-width:3px}.mission{border-top-width:3px}.steps span{font-size:11px}.primary{padding:14px 20px}}
+
+/* Objetos interativos: contorno visível sem indicar a resposta correta. */
+.target{stroke:#fff4c9;stroke-width:4;stroke-dasharray:10 7;fill:#fff4c90a;vector-effect:non-scaling-stroke;filter:drop-shadow(0 1px 2px #173b47);transition:fill .18s,stroke .18s}
+.target:hover,.target:focus-visible{stroke:#ffd166;stroke-width:6;stroke-dasharray:none;fill:#ffd16640}
+.target:active{fill:#ffd16680}
+#instruction{font-size:16px;font-weight:750;color:#174654}
+.scene-scroll{border:3px solid #247f88}
+.status{font-weight:650}
+@media(max-width:800px){.target{stroke-width:3}.mission p{font-size:15px}}
