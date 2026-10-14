@@ -51,3 +51,8 @@ button:focus-visible,a:focus-visible{outline-color:#bd7720}header button:focus-v
 .board>img.click-zoom{transform:scale(1.14)}
 #instruction{font-size:16px;font-weight:750;color:#174654}
 @media(prefers-reduced-motion:reduce){.board>img{transition:none}}
+
+#figureZoom{position:absolute;overflow:hidden;pointer-events:none;z-index:2;transform:scale(1.35);transform-origin:center;box-shadow:0 3px 12px #173b4740;border-radius:4px;animation:figure-pop .25s ease-out}
+#figureZoom img{position:absolute;max-width:none;display:block}
+@keyframes figure-pop{from{transform:scale(1)}to{transform:scale(1.35)}}
+@media(prefers-reduced-motion:reduce){#figureZoom{animation:none}}
